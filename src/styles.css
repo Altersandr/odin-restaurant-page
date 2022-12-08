@@ -12,25 +12,33 @@ html{
     height: 100%;
     display: flex;
     justify-content: center;
+    background-color: rgb(180, 228, 226);
 }
 
 #content{
     font-family: inherit;
     height: 100%;
     width: 100%;
-    background-color: #B4F8C8;
+    
 }
 #menu-bar{
+    background-color: #B4F8C8;
     height: 25%;
     display: grid;
     grid-template-rows: 2fr 1fr;
     justify-items: center;
-    /* padding-top: 1em; */
     gap: 2em;
-    /* border-bottom: 1px solid salmon; */
+    padding-bottom: 2em;
+}
+
+#menu, 
+#home,
+#contact{
+    cursor: pointer;
 }
 
 #nav{
+    color: rgb(58, 58, 58);
     display: flex;
     gap: 2em;
     font-size: 1.5rem;
@@ -39,9 +47,24 @@ html{
 
 
 #main-body{
+    padding-top: 5rem;
 height: 70%;
 
 }
+
+#logo{
+    height: 180px;
+}
+
+
+#item1{
+    /* background-image: url(/src/img/rosesmillecrepe.jpg); */
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+}
+
+
 
 
 
@@ -57,21 +80,19 @@ height: 70%;
 
 
 #footer{
-    /* width: 41.7%; */
     height: 5%;
     justify-content: center;
     align-items: center;
     gap: 5rem;
     display: flex;
     color: rgb(0, 0, 0);
-    background-color: rgb(255, 174, 188, .8);
+    background-color: rgb(255, 174, 188, .6);
 }
 
 #author{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 4rem; */
 }
 
 footer img{
@@ -79,6 +100,9 @@ footer img{
     height: 1.5em;
 }
 
+.github{
+    width: 30px;
+ }
 
 
 
