@@ -1,25 +1,5 @@
-/* <div id="content">
-        <div id="menu-bar">
-            <img src="../src/img/logo.png" alt="logo" height="180px">
-            <div id="nav">
-                <div id="home">Home</div>
-                <div id="menu">Menu</div>
-                <div id="contact">Contact</div>
-            </div>
-        </div>
-        <div id="main-body"></div>
-        <footer id="footer">
-            <div id = 'author'>Copyright © 2022 Altersandr</div>
-            <a href="https://github.com/Altersandr">
-                <img src= "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt = 'Altersandr' width="30px" class="github">
-            </a>
-        </footer>
-    </div> */
-
-// window.addEventListener('onload', onPageLoad)
-
 function pageLoad (){
-
+    const body = document.querySelector('body');
     const content = document.getElementById('content');
 
     const menuBar = document.createElement('div'); //menu-bar
@@ -55,26 +35,26 @@ function pageLoad (){
 
     content.appendChild(mainBody);
 
-    const footer = document.createElement('footer');
-    footer.id = 'footer';
+    // const footer = document.createElement('footer');
+    // footer.id = 'footer';
     
-    const author = document.createElement('div');
-    author.id = 'author';
-    author.innerHTML = "Copyright © 2022 Altersandr";
+    // const author = document.createElement('div');
+    // author.id = 'author';
+    // author.innerHTML = "Copyright © 2022 Altersandr";
 
-    footer.appendChild(author);
+    // footer.appendChild(author);
 
-    const github = document.createElement('a');
-    github.href = "https://github.com/Altersandr";
+    // const github = document.createElement('a');
+    // github.href = "https://github.com/Altersandr";
 
 
-    const githubImg = document.createElement('img');
-    githubImg.className = 'github';
-    githubImg.src = "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg";
+    // const githubImg = document.createElement('img');
+    // githubImg.className = 'github';
+    // githubImg.src = "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg";
 
-    github.appendChild(githubImg);
-    footer.appendChild(github);
-    content.appendChild(footer)
+    // github.appendChild(githubImg);
+    // footer.appendChild(github);
+    // body.appendChild(footer)
 
 
 };
