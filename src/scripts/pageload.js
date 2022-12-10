@@ -34,35 +34,6 @@ function pageLoad (){
     mainBody.id = 'main-body';
 
     content.appendChild(mainBody);
-
-    // const footer = document.createElement('footer');
-    // footer.id = 'footer';
-    
-    // const author = document.createElement('div');
-    // author.id = 'author';
-    // author.innerHTML = "Copyright © 2022 Altersandr";
-
-    // footer.appendChild(author);
-
-    // const github = document.createElement('a');
-    // github.href = "https://github.com/Altersandr";
-
-
-    // const githubImg = document.createElement('img');
-    // githubImg.className = 'github';
-    // githubImg.src = "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg";
-
-    // github.appendChild(githubImg);
-    // footer.appendChild(github);
-    // body.appendChild(footer)
-
-
-};
-
-function addToContent (divId){
-    const div = document.createElement('div');
-    div.id = divId;
-    content.appendChild(div)
 };
 
 export {pageLoad};

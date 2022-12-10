@@ -11,8 +11,3 @@ pageLoad();
 menu.addEventListener('click', loadMenu);
 contact.addEventListener('click', loadContact);
 home.addEventListener('click', loadHome);
-
-
-
-
-

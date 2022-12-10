@@ -17,6 +17,3 @@ function loadHome(){
 };
 
 export {loadHome}
-
-//S'LAB, a modern and well-finished Chinese pastry bar that winks at the very young, 
-//here you can see our newest addition to the menu, a Christmas special drink: 🎄Strawberry Matcha Latte🎄"
