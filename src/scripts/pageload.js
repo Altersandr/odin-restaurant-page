@@ -7,7 +7,7 @@ function pageLoad (){
 
     const logo = document.createElement('img');
     logo.id = "logo";
-    logo.src = "../src/img/logo.png";
+    logo.src = "src/img/logo.png";
 
     const nav = document.createElement('div'); //nav
     nav.id = "nav";
