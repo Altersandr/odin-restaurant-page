@@ -5,7 +5,7 @@ const homeImg = document.createElement('img');
 
 h3.innerHTML = "Sweets Laboratory, a modern and well-finished Chinese pastry bar that winks at the very young, here you can see our newest addition to the menu, a Christmas special drink: 🎄Strawberry Matcha Latte🎄";
 
-homeImg.src = "../src/img/home.jpg";
+homeImg.src = "src/img/home.jpg";
 homeImg.id = "home-img";
 
 
