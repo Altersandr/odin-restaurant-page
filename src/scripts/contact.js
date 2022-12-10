@@ -1,7 +1,18 @@
 const map = document.createElement('img');
 map.id = "map";
 map.src = "../src/img/map.png";
-map.height = "400";
+
+const igDiv = document.createElement('div');
+igDiv.id = 'instagram';
+
+const pNumber = document.createElement('p');
+pNumber.innerHTML = "2 3653 5586"
+
+const igTag = document.createElement('p');
+igTag.innerHTML = "@slabmilano"
+
+const numberDiv = document.createElement('div');
+numberDiv.id = 'number';
 
 const ig = document.createElement('img');
 ig.id = 'ig';
@@ -14,11 +25,15 @@ phone.src = "../src/img/phone.svg";
 phone.height = '50';
 
 function loadContact (){
+    igDiv.appendChild(ig);
+    igDiv.appendChild(igTag);
+    numberDiv.appendChild(phone);
+    numberDiv.appendChild(pNumber);
+
     const mainBody = document.getElementById('main-body');
-    // mainBody.className = "contacts";
     mainBody.innerHTML = "";
-    mainBody.appendChild(phone);
-    mainBody.appendChild(ig);
+    mainBody.appendChild(igDiv);
+    mainBody.appendChild(numberDiv)
     mainBody.appendChild(map);
 };
 

@@ -1,4 +1,7 @@
 *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -9,38 +12,59 @@ body,
 html{
     flex-direction: column;
     font-family: 'Mochiy Pop One', sans-serif;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(180, 228, 226);
+    width: 100vw;
+    height: 100vh;
+    background-color: #B4F8C8;
 }
 
 #content{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: inherit;
-    height: 100%;
-    width: 100%;
+    height: 95vh;
+    width: 100vw;
     
 }
 #menu-bar{
-    width: 100%;
     background-color: #B4F8C8;
-    height: 25%;
+    height: 30%;
     display: grid;
     grid-template-rows: 2fr 1fr;
     justify-items: center;
     gap: 2em;
-    padding-bottom: 2em;
-    z-index: 2;
 }
 
 #menu, 
 #home,
 #contact{
+    position: relative;
     cursor: pointer;
+
+}
+
+#menu::before,
+#home::before,
+#contact::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: rgb(54, 54, 54);
+  bottom: 40%;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+#menu:hover::before,
+#home:hover::before,
+#contact:hover::before{
+    transform-origin: left;
+    transform: scaleX(1);  
 }
 
 #nav{
@@ -52,29 +76,48 @@ html{
 }
 
 
-#main-body{
+#main-body {
+    background-color: rgb(128, 128, 128, .2);
+    border-radius: 5%;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
-    padding-top: 5rem;
-    height: 70%;
-    width: 50%;
-
+    place-items: center;
+    height: 620px;
+    width: 800px;
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 
 #map{
+    width: 620px;
     grid-column: 2;
+    grid-row: 3;
+    padding-bottom: 10px;
 
 }
-#ig{
-    position: absolute;
+
+#instagram{
+    grid-row: 2;
 }
 
-#phone{
-    position: absolute;
+#instagram, #number{
+    font-size: 1.2em;
+    display: flex;
+    grid-column: 2;
+    place-self: start;
+}
+
+#instagram p{
+    padding-top: .5em;
+    padding-left: 2em;
+}
+
+#number p{
+    padding-top: 1em;
+    padding-left: 1em;
 }
 
 #logo{
@@ -83,71 +126,66 @@ html{
 
 
 .items{
-    color: rgb(0, 0, 0);
+    color: rgb(54, 54, 54);
     font-weight: bold;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     border-radius: 50%;
     background-repeat: no-repeat;
-    height: 150px;
-    width: 150px;
+    height: 180px;
+    width: 180px;
     background-size: cover;
     background-position: center;
 }
 
 .items>*{
-    /* text-align: center; */
+    text-align: center;
+    text-indent: 10px;
     border-radius: 25px;
-    background-color: rgba(255, 255, 255, .6);
+    background-color: rgba(255, 255, 255, .8);
 }
 
 .items .price{
-    text-align: end;
-    /* align-self: flex-end; */
-    /* width: ; */
+    width: 30%;
+    padding-right: 10px;
+    /* text-align: end; */
+   
 }
 
+#home-img{
+    border-radius: 40px;
+    grid-column: 3/4;
+    height: 70%;
+    place-self: start;
+    padding: 30px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+h3{
+    font-size:x-large;
+    grid-column: 1/3;
+    color: rgb(54, 54, 54);
+    padding-left: 30px;
+    padding-bottom: 200px;
+}
 
 
 
 #footer{
+    font-weight: bold;
     width: 100%;
     height: 5%;
     justify-content: center;
     align-items: center;
     gap: 5rem;
     display: flex;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 174, 188, .6);
-}
-
-#author{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: rgb(54, 54, 54);
+    background-color: rgba(243, 132, 184, 0.6);
 }
 
 footer img{
-
-    height: 1.5em;
+    height: 1.7em;
 }
-
-.github{
-    width: 30px;
- }
 
 
 
