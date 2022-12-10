@@ -1,6 +1,6 @@
 const map = document.createElement('img');
 map.id = "map";
-map.src = "../src/img/map.png";
+map.src = "src/img/map.png";
 
 const igDiv = document.createElement('div');
 igDiv.id = 'instagram';
@@ -16,12 +16,12 @@ numberDiv.id = 'number';
 
 const ig = document.createElement('img');
 ig.id = 'ig';
-ig.src = "../src/img/ig.svg";
+ig.src = "src/img/ig.svg";
 ig.height = '30';
 
 const phone = document.createElement('img');
 phone.id = 'phone';
-phone.src = "../src/img/phone.svg";
+phone.src = "src/img/phone.svg";
 phone.height = '50';
 
 function loadContact (){
